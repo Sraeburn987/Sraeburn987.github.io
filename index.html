@@ -3,18 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Supabase + GitHub Pages Demo</title>
+    <title>Supabase Login Demo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <main class="card">
-      <h1>Supabase Demo</h1>
+      <h1>Login Demo</h1>
 
-      <input id="msg" placeholder="Type something..." />
-      <button id="send">Save to Supabase</button>
+      <section id="auth">
+        <input id="email" placeholder="email" />
+        <input id="password" type="password" placeholder="password" />
+        <button id="signup">Sign up</button>
+        <button id="login">Log in</button>
+        <p id="authStatus"></p>
+      </section>
 
-      <p id="status"></p>
+      <section id="app" style="display:none;">
+        <p>Logged in as <span id="who"></span></p>
+
+        <input id="msg" placeholder="Type a message..." maxlength="200" />
+        <button id="send">Save</button>
+        <button id="logout">Log out</button>
+
+        <p id="status"></p>
+        <ul id="list"></ul>
+      </section>
     </main>
 
     <script type="module" src="script.js"></script>
