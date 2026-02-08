@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Supabase Login Demo</title>
+    <title>Secure Supabase Login</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <main class="card">
-      <h1>Login Demo</h1>
+      <h1>Secure Message App</h1>
 
+      <!-- Login Section -->
       <section id="auth">
-        <input id="email" placeholder="email" />
-        <input id="password" type="password" placeholder="password" />
-        <button id="signup">Sign up</button>
+        <input id="email" placeholder="Email" />
+        <input id="password" type="password" placeholder="Password" />
         <button id="login">Log in</button>
         <p id="authStatus"></p>
       </section>
 
+      <!-- App Section -->
       <section id="app" style="display:none;">
         <p>Logged in as <span id="who"></span></p>
 
-        <input id="msg" placeholder="Type a message..." maxlength="200" />
+        <input id="msg" placeholder="Type your message..." maxlength="200" />
         <button id="send">Save</button>
         <button id="logout">Log out</button>
 
